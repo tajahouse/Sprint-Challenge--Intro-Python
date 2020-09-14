@@ -42,7 +42,10 @@ print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
-d = []
+def add10(n):
+    return n + 10
+ages = (i.age for i in humans)
+d = [add10(i.age) for i in humans] #b my map method didn't work... revisit
 print(d)
 
 # Write a list comprehension that creates a list of strings which are the name
